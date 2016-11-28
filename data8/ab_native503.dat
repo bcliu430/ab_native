@@ -1,84 +1,42 @@
-This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
+This is ApacheBench, Version 2.3 <$Revision: 1604373 $>
 Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
 Licensed to The Apache Software Foundation, http://www.apache.org/
 
 Benchmarking 127.0.0.1 (be patient)
 
 
-Server Software:        Apache/2.4.7
+Server Software:        Apache/2.4.10
 Server Hostname:        127.0.0.1
 Server Port:            503
 
 Document Path:          /
-Document Length:        741 bytes
+Document Length:        11321 bytes
 
 Concurrency Level:      50
-Time taken for tests:   0.429 seconds
+Time taken for tests:   0.852 seconds
 Complete requests:      2500
 Failed requests:        0
-Total transferred:      2325000 bytes
-HTML transferred:       1852500 bytes
-Requests per second:    5827.56 [#/sec] (mean)
-Time per request:       8.580 [ms] (mean)
-Time per request:       0.172 [ms] (mean, across all concurrent requests)
-Transfer rate:          5292.61 [Kbytes/sec] received
+Total transferred:      28987500 bytes
+HTML transferred:       28302500 bytes
+Requests per second:    2935.90 [#/sec] (mean)
+Time per request:       17.031 [ms] (mean)
+Time per request:       0.341 [ms] (mean, across all concurrent requests)
+Transfer rate:          33243.89 [Kbytes/sec] received
 
 Connection Times (ms)
               min  mean[+/-sd] median   max
-Connect:        0    1   1.3      1       9
-Processing:     1    7   2.8      7      20
-Waiting:        1    7   2.7      7      20
-Total:          2    8   2.9      8      20
+Connect:        0    0   0.3      0       2
+Processing:     1   17   3.4     18      32
+Waiting:        1   17   3.4     17      32
+Total:          4   17   3.3     18      32
 
 Percentage of the requests served within a certain time (ms)
-  50%      8
-  66%      8
-  75%      9
-  80%      9
-  90%     12
-  95%     16
-  98%     18
-  99%     19
- 100%     20 (longest request)
-This is ApacheBench, Version 2.3 <$Revision: 1528965 $>
-Copyright 1996 Adam Twiss, Zeus Technology Ltd, http://www.zeustech.net/
-Licensed to The Apache Software Foundation, http://www.apache.org/
-
-Benchmarking 127.0.0.1 (be patient)
-
-
-Server Software:        Apache/2.4.7
-Server Hostname:        127.0.0.1
-Server Port:            503
-
-Document Path:          /
-Document Length:        741 bytes
-
-Concurrency Level:      50
-Time taken for tests:   0.788 seconds
-Complete requests:      2500
-Failed requests:        0
-Total transferred:      2325000 bytes
-HTML transferred:       1852500 bytes
-Requests per second:    3173.77 [#/sec] (mean)
-Time per request:       15.754 [ms] (mean)
-Time per request:       0.315 [ms] (mean, across all concurrent requests)
-Transfer rate:          2882.43 [Kbytes/sec] received
-
-Connection Times (ms)
-              min  mean[+/-sd] median   max
-Connect:        0    1   1.3      0       7
-Processing:     2   15   3.7     15      27
-Waiting:        2   14   3.8     14      26
-Total:          5   16   3.4     15      28
-
-Percentage of the requests served within a certain time (ms)
-  50%     15
-  66%     16
-  75%     17
-  80%     18
-  90%     20
-  95%     22
-  98%     24
-  99%     24
- 100%     28 (longest request)
+  50%     18
+  66%     19
+  75%     19
+  80%     20
+  90%     21
+  95%     21
+  98%     22
+  99%     22
+ 100%     32 (longest request)

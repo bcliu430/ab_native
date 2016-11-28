@@ -21,7 +21,7 @@ function run_apache {
 
 echo "start experiment..."
 rm result*.csv || true  # remove previous calculation
-rm vm*.dat  ||true
+rm ab_native*.dat  ||true
 wait
 echo "old data cleaned"
 

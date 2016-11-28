@@ -2,6 +2,6 @@
 
 set -euo pipefail
 
-sudo apt-get install apache2 && apt-get install apache2-utils
+apt-get install -y --without-yes apache2 && apt-get install -y --without-yes apache2-utils &
 
-cp ./ports.conf ./root/etc/apache2/
+cp ./ports.conf /etc/apache2/
