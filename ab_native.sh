@@ -14,7 +14,7 @@ function run_apache {
     printf "Running $numOfServers server(s) benchmark will start in 3 secs...\n"
     for i in `seq 500 $((numOfServers+499))`; do 
         touch $PREFIX$i.dat;
-        ab -n 2500 -c 50  "http://127.0.0.1:$i/" >> $PREFIX$i.dat  &
+        taskset  0x$((1 << $((i-500)))) ab -n 2500 -c 50  "http://127.0.0.1:$i/" >> $PREFIX$i.dat  &
     done
     wait
 }
